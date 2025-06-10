@@ -3,7 +3,7 @@ import Stats from 'three/examples/jsm/libs/stats.module.js';
 import { vertexShader, fragmentShader } from './shaders.js';
 
 // Import the image using Vite's asset handling
-import imagePath from './image.jpg';
+import imagePath from './image.jpg?url';
 
 // --- Configurable Variables ---
 const CONFIG = {
