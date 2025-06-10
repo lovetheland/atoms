@@ -2,6 +2,9 @@ import * as THREE from 'three';
 import Stats from 'three/examples/jsm/libs/stats.module.js';
 import { vertexShader, fragmentShader } from './shaders.js';
 
+// Import the image using Vite's asset handling
+import imagePath from './image.jpg';
+
 // --- Configurable Variables ---
 const CONFIG = {
   frustumSize: 1, // FOV
@@ -11,7 +14,7 @@ const CONFIG = {
   panDamping: 0.85,
   planeHeight: 2,
   cameraZ: 5,
-  imagePath: './image.jpg',
+  imagePath: imagePath, // Use the imported image path
   pointSize: 1.0,
   planeSubdivisions: 256,
   // texturePlaneVisibilityZoomThreshold: 4.0, // Added: Zoom level to hide texture plane // Will be replaced
